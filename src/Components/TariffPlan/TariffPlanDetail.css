@@ -1,0 +1,28 @@
+
+
+.TariffPlanDetail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 33.3333333%;
+    border: 3px solid #0088cc;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.TariffPlanDetail .btn{
+    width: 100%;
+}
+
+.TariffPlanDetail button {
+    font-weight: bold;
+    border: 1px solid #0088cc;
+    color: #ffffff;
+    background: #0088cc;
+    font-size: 32px;
+    width: 70%;
+    padding: 20px;
+    border-radius: 60px;
+}
+

@@ -1,0 +1,18 @@
+
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.telegram-style {
+    font-size: 32px;
+    font-family: "Courier New", monospace;
+    font-variant: small-caps;
+    letter-spacing: -1px;
+    color: #0088cc;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

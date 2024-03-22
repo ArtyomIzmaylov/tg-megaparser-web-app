@@ -1,0 +1,45 @@
+.header {
+    background-color: #0088cc; /* Цвет фона Telegram */
+    color: #fff; /* Цвет текста */
+    padding: 10px;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar__logo {
+    font-family: "Courier New", monospace;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.Navbar__menu {
+    display: flex;
+    gap: 10px;
+}
+
+.Navbar__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Navbar__toggle {
+    display: none; /* Скрыть на больших экранах */
+}
+
+@media screen and (max-width: 780px) {
+    .Navbar__menu {
+        display: none; /* Скрыть меню на мобильных */
+    }
+
+    .Navbar__toggle {
+        display: block; /* Показать кнопку меню на мобильных */
+    }
+
+    .Navbar__menu.open {
+        display: block; /* Показать меню при открытии */
+    }
+}
