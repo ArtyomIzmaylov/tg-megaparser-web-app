@@ -30,6 +30,26 @@
     display: none; /* Скрыть на больших экранах */
 }
 
+.Navbar button {
+    padding: 5px;
+    border: 2px solid #0088cc;
+    border-radius: 40px;
+    color: white;
+    background: #0088cc;
+    font-size: 32px;
+}
+
+.Navbar a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.Navbar a {
+    font-size: 35px;
+    color: #0088cc;
+}
+.Navbar a:hover {
+    font-size: 38px;
+}
 @media screen and (max-width: 780px) {
     .Navbar__menu {
         display: none; /* Скрыть меню на мобильных */

@@ -1,3 +1,10 @@
 .TariffPlanList {
     display: flex;
 }
+
+
+@media only screen and (max-width: 1170px) {
+    .TariffPlanList {
+        flex-direction: column; /* На мобильных устройствах блоки располагаются вертикально */
+    }
+}

@@ -3,7 +3,6 @@ import './Navbar.css'
 import {NavLink} from "react-router-dom";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    console.log('is ope')
     const handleToggle = () => {
         setIsOpen(!isOpen);
     };
@@ -11,7 +10,7 @@ const Navbar = () => {
     return (
         <nav className="Navbar">
             <div className="navbar-logo">Logo Here</div>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/login">Sign up</NavLink>
             <button onClick={handleToggle}>
                 {isOpen ? "Close Menu" : "Open Menu"}
             </button>

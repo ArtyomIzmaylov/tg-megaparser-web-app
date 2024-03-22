@@ -1,5 +1,10 @@
 
 
+#root {
+    margin: auto;
+    max-width: 1920px;
+    min-width: 320px;
+}
 .App {
     display: flex;
     flex-direction: column;

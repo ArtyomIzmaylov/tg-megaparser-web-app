@@ -1,6 +1,7 @@
 
 
 .TariffPlanDetail {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -26,3 +27,8 @@
     border-radius: 60px;
 }
 
+@media only screen and (max-width: 1080px) {
+    .TariffPlanDetail {
+        width: 100% /* На мобильных устройствах блоки располагаются вертикально */
+    }
+}
