@@ -27,8 +27,9 @@
     border-radius: 60px;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1170px) {
     .TariffPlanDetail {
+        font-size: 60px;
         width: 100% /* На мобильных устройствах блоки располагаются вертикально */
     }
 }
