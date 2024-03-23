@@ -1,10 +1,8 @@
-.header {
-    background-color: #0088cc; /* Цвет фона Telegram */
-    color: #fff; /* Цвет текста */
-    padding: 10px;
-}
+
 
 .Navbar {
+    background-color: #325a95; /* Цвет фона Telegram */
+    color: #f6f7f9; /* Цвет текста */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +11,7 @@
 .Navbar__logo {
     font-family: "Courier New", monospace;
     font-size: 1.5rem;
-    color: #fff;
+    color: #f6f7f9;
 }
 
 .Navbar__menu {
@@ -22,7 +20,7 @@
 }
 
 .Navbar__link {
-    color: #fff;
+    color: #f6f7f9;
     text-decoration: none;
 }
 
@@ -31,11 +29,12 @@
 }
 
 .Navbar button {
-    padding: 5px;
-    border: 2px solid #0088cc;
-    border-radius: 40px;
-    color: white;
-    background: #0088cc;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    color: #f6f7f9;
+    background: 0;
     font-size: 32px;
 }
 
@@ -45,7 +44,7 @@
 
 .Navbar a {
     font-size: 35px;
-    color: #0088cc;
+    color: #f6f7f9;
 }
 .Navbar a:hover {
     font-size: 38px;

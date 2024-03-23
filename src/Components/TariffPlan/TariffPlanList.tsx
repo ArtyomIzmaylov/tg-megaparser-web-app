@@ -1,19 +1,18 @@
 import React from 'react';
-import {ITariffPlan} from "../../types/TariffPlan";
+import {ISelectedTariffPlan, ITariffPlan} from "../../types/TariffPlan";
 import TariffPlanDetail from "./TariffPlanDetail";
 import './TariffPlanDetailList.css'
 
-const initTariffPlanList : ITariffPlan[] = [
-    {title : 'Месяц', description : 'Это ежемесячная тарификация, нужно будет платить каждый месяц', cost : '30 000 ₽'},
-    {title : '3 Месяца', description : 'Это ежемесячная тарификация, нужно будет платить каждые 3 месяца', cost : '85 000 ₽'},
-    {title : 'Год', description : 'Это ежегодная тарификация, нужно будет платить каждый год', cost : '299 000 ₽'},
-]
-const TariffPlanList = () => {
+interface ITariffPlanListProps {
+    tariffPlanList : ITariffPlan[]
+    changeTariff : (tariff : ITariffPlan) => void
+}
+const TariffPlanList : React.FC<ITariffPlanListProps> = ({tariffPlanList, changeTariff}) => {
     return (
         <div className="TariffPlanList">
-            <TariffPlanDetail tariffPlan={initTariffPlanList[0]}></TariffPlanDetail>
-            <TariffPlanDetail tariffPlan={initTariffPlanList[1]}></TariffPlanDetail>
-            <TariffPlanDetail tariffPlan={initTariffPlanList[2]}></TariffPlanDetail>
+            <TariffPlanDetail tariffPlan={tariffPlanList[0]} changeTariff={changeTariff}></TariffPlanDetail>
+            <TariffPlanDetail tariffPlan={tariffPlanList[1]} changeTariff={changeTariff}></TariffPlanDetail>
+            <TariffPlanDetail tariffPlan={tariffPlanList[2]} changeTariff={changeTariff}></TariffPlanDetail>
         </div>
     );
 };

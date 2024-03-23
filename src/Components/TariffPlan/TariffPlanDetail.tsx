@@ -1,11 +1,13 @@
 import React from 'react';
 import {ITariffPlan} from "../../types/TariffPlan";
 import './TariffPlanDetail.css'
+import tariff from "../../pages/Tariff/Tariff";
 
 interface TariffPlanDetailProps {
     tariffPlan : ITariffPlan
+    changeTariff : (tariff : ITariffPlan) => void
 }
-const TariffPlanDetail : React.FC<TariffPlanDetailProps> = ({tariffPlan}) => {
+const TariffPlanDetail : React.FC<TariffPlanDetailProps> = ({tariffPlan, changeTariff}) => {
 
     return (
         <div className="TariffPlanDetail">
@@ -13,7 +15,7 @@ const TariffPlanDetail : React.FC<TariffPlanDetailProps> = ({tariffPlan}) => {
             <p>{tariffPlan.description}</p>
             <h2>{tariffPlan.cost}</h2>
             <div className="btn">
-                <button>Купить :)</button>
+                <button onClick={() => changeTariff(tariffPlan)}>Купить</button>
             </div>
         </div>
     );

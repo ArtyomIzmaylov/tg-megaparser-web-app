@@ -6,7 +6,7 @@
     flex-direction: column;
     text-align: center;
     width: 33.3333333%;
-    border: 3px solid #0088cc;
+    border: 3px solid #4675c0;
     margin: 10px;
     border-radius: 20px;
     padding: 20px;
@@ -18,14 +18,22 @@
 
 .TariffPlanDetail button {
     font-weight: bold;
-    border: 1px solid #0088cc;
-    color: #ffffff;
-    background: #0088cc;
+    border: 1px solid #4675c0;
+    color: #f6f7f9;
+    background: #4675c0;
     font-size: 32px;
     width: 70%;
     padding: 20px;
     border-radius: 60px;
+    transition: background 0.5s ease;
 }
+
+.TariffPlanDetail button:hover{
+    background: #5c86d4;
+}
+
+
+
 
 @media only screen and (max-width: 1170px) {
     .TariffPlanDetail {
