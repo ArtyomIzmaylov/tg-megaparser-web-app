@@ -1,7 +1,6 @@
 import React from 'react';
 import {ITariffPlan} from "../../types/TariffPlan";
 import './TariffPlanDetail.css'
-import tariff from "../../pages/Tariff/Tariff";
 
 interface TariffPlanDetailProps {
     tariffPlan : ITariffPlan

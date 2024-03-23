@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import TariffPlanList from "../../Components/TariffPlan/TariffPlanList";
 import './Tariff.css'
-import {ISelectedTariffPlan, ITariffPlan} from "../../types/TariffPlan";
-import TariffPlanDetail from "../../Components/TariffPlan/TariffPlanDetail";
+import { ITariffPlan} from "../../types/TariffPlan";
 import SelectedTariffPlan from "../../Components/TariffPlan/SelectedTariffPlan";
 
 

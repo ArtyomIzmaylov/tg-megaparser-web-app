@@ -1,5 +1,5 @@
 import React from 'react';
-import {ISelectedTariffPlan, ITariffPlan} from "../../types/TariffPlan";
+import {ITariffPlan} from "../../types/TariffPlan";
 import TariffPlanDetail from "./TariffPlanDetail";
 import './TariffPlanDetailList.css'
 
