@@ -30,8 +30,7 @@ const Tariff : React.FC= () => {
             <h1>Вас приветствует приложение telegram-mega-parser</h1>
             {!selectedTariff && <p>Для того, чтобы воспользоваться нашим приложением,вам нужно выбрать тарифный план</p>}
             {!selectedTariff && <TariffPlanList tariffPlanList={initTariffPlanList} changeTariff={changeTariff}></TariffPlanList>}
-
-            {selectedTariff && <SelectedTariffPlan selectedTariff={selectedTariff} changeTariff={changeTariff}></SelectedTariffPlan>}
+            {selectedTariff && <SelectedTariffPlan selectedTariff={selectedTariff} selectedTariffTitle={selectedTariffTitle}changeTariff={changeTariff}></SelectedTariffPlan>}
         </div>
     );
 };
